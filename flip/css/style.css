@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: Lato-Regular;
+}
+@font-face{
+  font-family: HelveticaNeue-Bold;
+  src:url(fonts/HelveticaNeue-Bold.otf);
+}
+@font-face{
+  font-family: Lato-Bold;
+  src:url(fonts/Lato-Bold.ttf);
+}
+@font-face{
+  font-family: Lato-Regular;
+  src:url(fonts/Lato-Regular.ttf);
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+/*--some custom classes--*/
+.d_flex{
+  display: flex;
+}
+.jus_sb{
+  justify-content: space-between;
+}
+.jus_c{
+  justify-content: center;
+}
+.jus_c_v{
+  align-items: center;
+}
+.fd_col{
+  flex-direction: column;
+}
+.t_a_center{
+  text-align: center;
+}
+.t_a_lft{
+  text-align: left;
+}
+.t_a_rgt{
+  text-align: right;
+}
+.font_hb{
+  font-family:HelveticaNeue-Bold; 
+}
+.font_lb{
+  font-family: Lato-Bold;
+}
+.font_lr{
+  font-family: Lato-Regular;
+}
+.col_g{
+  color: #63cebe;
+}
+.col_dg{
+  color: #5ab75a;
+}
+.col_v{
+  color: #7e8997;
+}
+.col_v_l{
+  color: #afb2b7;
+}
+.col_w{
+  color: #ffffff;
+}
+.col_rl{
+  color: #fa6e6f;
+}
+.col_o{
+  color: #fcab65;
+}
+.top_mar{
+  margin-top: 20px;
+}
+.rgt_mar{
+  margin-right: 20px;
+}
+.div65{
+  width: 65%;
+}
+.div35{
+  width: 35%;
+}
+.pos_rel{
+  position: relative;
+}
+/*------------------------*/
+
+/*------------------------------------*/
+/*-------Login Page starts-----*/
+main#login_page{
+  width: 100%;
+}
+main#login_page>div{
+  width: 40%;
+  padding: 20px;
+}
+main#login_page header img{
+  width: 60px;
+}
+main#login_page section>div{
+  font-size: 15pt;
+  letter-spacing:6px;
+}
+main#login_page section h2{
+  font-size: 28px;
+  letter-spacing: .5px;
+  margin: 50px 0px;
+}
+main#login_page section a{
+  font-size: 21px;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  width: 240px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+main#login_page>div:nth-child(2){
+  width: 60%;
+  background: #414f62;
+  padding: 5% 0px;
+}
+main#login_page .form {
+  width: 580px;
+}
+main#login_page .form .info{
+  position: absolute;
+  top: 45px;
+  left: 10px;
+}
+main#login_page .form h1{
+  font-size: 32px;
+}
+main#login_page .form legend{
+  font-size: 21px;
+  margin: 10px 0px;
+}
+main#login_page .form label{
+  font-size: 18px;
+  display: block;
+  margin: 30px 0px 10px;
+}
+main#login_page .form input:not([type='checkbox']){
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+main#login_page .form input::placeholder{
+    font-family: Lato-Regular;
+    color: #9598a0;
+}
+main#login_page .form input:-ms-input-placeholder { 
+    color: #9598a0;
+}
+main#login_page .form input::-ms-input-placeholder { 
+    color: #9598a0;
+}
+main#login_page .form button{
+    border: none;
+    border-radius: 5px;
+    background: #38d7ba;
+    font-size: 21px;
+    display: block;
+    margin: 0 auto;
+    padding: 14px 60px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 40px;
+    letter-spacing: .4px;
+  }
+  main#login_page footer li a{
+  font-size: 28px;
+  color: #576271;
+}
+  main#login_page footer ul{
+  width: 200px;
+  margin: 0 auto;
+}
+summary{
+  background:#63cebe;
+  color:#ffffff;
+}
+summary>div{
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+summary h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+  letter-spacing:1px;
+}
+summary h3{
+  font-size:21px;
+  letter-spacing:1px;
+  margin-bottom: 10px;
+}
+summary p{
+  font-size: 18px;
+  letter-spacing: .5px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+/*-------Login Page ends-----*/
+/*------------------------------------*/
+
+@media (max-width: 1024px){
+  main#login_page .form{
+    width: 80%;
+  }
+  main#login_page section h2{
+    font-size: 24px;
+  }
+  main#login_page .form h1 {
+    font-size: 32px;
+  } 
+  main#login_page .form label{
+    margin: 30px 0px 10px;
+  }   
+}
+@media (max-width: 767px){
+  main#login_page.d_flex{
+    display: block;
+  }
+  main#login_page>div,main#login_page>div:nth-child(2){
+    width: 100%;
+  }
+  footer{
+    display: none;
+  }
+  main#login_page>div section{
+    padding: 10% 0px;
+  }  
+}
+
+
